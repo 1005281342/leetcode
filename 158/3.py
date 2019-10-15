@@ -9,10 +9,12 @@ class Solution:
             ndp = [[0] * 16 for _ in range(7)]
             for i in range(0, 6 + 1):
                 for j in range(1, 15 + 1):
-                    if dp[i][j] == 0: continue
+                    if dp[i][j] == 0:
+                        continue
                     for k in range(1, 6 + 1):
                         if i == k:
-                            if j == rollMax[k]: continue
+                            if j == rollMax[k]:
+                                continue
                             ndp[k][j + 1] += dp[i][j]
                         else:
                             ndp[k][1] += dp[i][j]
