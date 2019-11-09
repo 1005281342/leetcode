@@ -14,4 +14,4 @@ class Solution:
         for n in tn[1:]:
             tt[n] += tt[n-1]
 
-        for i in range(k,)
+        # for i in range(k,)
